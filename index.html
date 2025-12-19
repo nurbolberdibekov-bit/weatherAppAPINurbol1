@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App | Nurbol</title>
+    <link rel="icon" type="image/png" href="icons/logo.png">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@24,400,0,0" />
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="app-shell">
+    <div class="container">
+        <!-- Search Bar -->
+        <div class="search-section">
+            <div class="input-wrapper">
+                <span class="material-symbols-rounded search-icon">search</span>
+                <input type="search" placeholder="Enter the city" class="search-input">
+            </div>
+        </div>
+
+        <div class="no-results">
+            <img src="icons/no-result.svg" alt="No results found" class="icon">
+            <h3 class="title">Something went wrong!</h3>
+            <p class="message">We're unable to retrieve the weather details. Ensure you've entered a valid city or try again later.</p>
+        </div>
+
+        <div class="weather-section">
+            <!-- Main Weather Card -->
+            <div class="glass-card main-weather-card">
+                <div class="card-header">
+                    <div>
+                        <p class="city-label">Location</p>
+                        <p class="city-name">—</p>
+                        <p class="local-date">—</p>
+                    </div>
+                    <button class="icon-button location-button" title="Use my location">
+                        <span class="material-symbols-rounded">my_location</span>
+                    </button>
+                </div>
+
+                <div class="current-weather">
+                    <img src="icons/no-result.svg" class="weather-icon" alt="Weather icon">
+                    <h2 class="temperature">00<span>°C</span></h2>
+                    <h5 class="description">Weather description</h5>
+                    <p class="min-max">Max: --° Min: --°</p>
+                </div>
+
+                <div class="details-card-inner">
+                    <div class="stat-row">
+                        <div class="stat">
+                            <span class="material-symbols-rounded">water_drop</span>
+                            <div>
+                                <p class="label">Precip</p>
+                                <p class="value precip">--%</p>
+                            </div>
+                        </div>
+                        <div class="stat">
+                            <span class="material-symbols-rounded">humidity_percentage</span>
+                            <div>
+                                <p class="label">Humidity</p>
+                                <p class="value humidity">--%</p>
+                            </div>
+                        </div>
+                        <div class="stat stat-wind">
+                            <span class="material-symbols-rounded">air</span>
+                            <div>
+                                <p class="label">Wind</p>
+                                <p class="value wind">-- km/h</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Today Section -->
+            <div class="section">
+                <div class="section-title">
+                    <p>Today</p>
+                    <p class="today-range">—</p>
+                </div>
+                <div class="hourly-weather">
+                    <ul class="weather-list"></ul>
+                </div>
+            </div>
+
+            <!-- Next Forecast Section -->
+            <div class="section next-forecast">
+                <div class="section-title">
+                    <p>Next Forecast</p>
+                    <span class="material-symbols-rounded">calendar_month</span>
+                </div>
+                <ul class="daily-list"></ul>
+            </div>
+        </div>
+    </div>
+</div>
+<script src="script.js"></script>
+</body>
+</html>
