@@ -4,7 +4,7 @@
 Приложение получает данные о погоде через сторонний Weather API и отображает их в простом и понятном интерфейсе.
 
 🔗 **Live demo:**
-[https://nurbolberdibekov-bit.github.io/weatherAppAPINurbol/](https://nurbolberdibekov-bit.github.io/weatherAppAPINurbol/)
+[https://nurbolberdibekov-bit.github.io/weatherAppAPINurbol/](https://nurbolberdibekov-bit.github.io/weatherAppAPINurbol1/)
 
 🎨 **Figma design:**
 [https://www.figma.com/design/tYSZXzCCzaImp571n7U8DU/Weather-App-%7C-Nurbol](https://www.figma.com/design/tYSZXzCCzaImp571n7U8DU/Weather-App-%7C-Nurbol)
